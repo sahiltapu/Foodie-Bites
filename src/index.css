@@ -98,6 +98,7 @@ a {
   border-color: var(--white);
 }
 .btn_red {
+  text-decoration: none;
   color: var(--white);
   background: var(--light-red);
   border-color: var(--light-red);
