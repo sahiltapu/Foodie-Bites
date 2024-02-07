@@ -19,7 +19,7 @@ const mockData = [
     title: "Crispy Chicken",
     paragraph: "Chicken breast, chilli sauce, tomatoes, pickles, coleslaw",
     rating: 5,
-    price: 99.15,
+    price: 129,
   },
   {
     id: "0002",
@@ -27,7 +27,7 @@ const mockData = [
     title: "Ultimate Bacon",
     paragraph: "House patty, cheddar cheese, bacon, onion, mustard",
     rating: 4.5,
-    price: 99.32,
+    price: 159,
   },
   {
     id: "0003",
@@ -35,7 +35,7 @@ const mockData = [
     title: "Black Sheep",
     paragraph: "American cheese, tomato relish, avocado, lettuce, red onion",
     rating: 4,
-    price: 69.15,
+    price: 210,
   },
   {
     id: "0004",
@@ -43,7 +43,7 @@ const mockData = [
     title: "Vegan Burger",
     paragraph: "House patty, cheddar cheese, bacon, onion, mustard",
     rating: 3.5,
-    price: 99.25,
+    price: 199,
   },
   {
     id: "0005",
@@ -51,7 +51,7 @@ const mockData = [
     title: "Double Burger",
     paragraph: "2 patties, cheddar cheese, mustard, pickles, tomatoes",
     rating: 3.0,
-    price: 59.25,
+    price: 129,
   },
   {
     id: "0006",
@@ -59,7 +59,7 @@ const mockData = [
     title: "Turkey Burger",
     paragraph: "Turkey, cheddar cheese, onion, lettuce, tomatoes, pickles",
     rating: 3,
-    price: 79.18,
+    price: 139,
   },
   {
     id: "0007",
@@ -67,7 +67,7 @@ const mockData = [
     title: "Smokey House",
     paragraph: "patty, cheddar cheese, onion, lettuce, tomatoes, pickles",
     rating: 2.5,
-    price: 99.19,
+    price: 219,
   },
   {
     id: "0008",
@@ -75,9 +75,29 @@ const mockData = [
     title: "Classic Burger",
     paragraph: "cheddar cheese, ketchup, mustard, pickles, onion",
     rating: 2.0,
-    price: 89.12,
+    price: 109,
   },
 ];
+// Rating Logical Data
+const renderRatingIcons = (rating) =>{
+  const stars = [];
+  for (let i = 0 ; i < 5 ; i ++){
+    if (rating > 0.5){
+      stars.push(<i key={i} className="bi bi-star-fill"></i>);
+      rating --;
+    }else if(rating > 0 && rating < 1){
+      stars.push(<i key={"half"} className="bi bi-star-half"></i>);
+      rating --;
+
+    }else{
+      stars.push(<i key={`empty${i}`} className="bi bi-star"></i>);
+    }
+  }
+  return stars;
+} ;
+
+
+
 
 const Section3 = () => {
   return (
@@ -103,7 +123,7 @@ const Section3 = () => {
               title={cardData.title}
               paragraph={cardData.paragraph}
               price={cardData.price}
-              //    renderRatingIcons={renderRatingIcons}
+              renderRatingIcons={renderRatingIcons}
             />
           ))}
         </Row>
@@ -118,7 +138,7 @@ const Section3 = () => {
             </div>
           </Col>
           <Col sm={6} lg={7}>
-            <div className="ads_box ads_img">
+            <div className="ads_box ads_img2">
               <h4 className="mb-0">Get YOUR FREE</h4>
               <h5>CHEESE FRIES</h5>
               <Link to="/" className="btn_red px-4 rounded-0">
