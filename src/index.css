@@ -108,4 +108,5 @@ a {
     color: var(--light-red);
     background: transparent;
     border-color: var(--light-red);
+    border: 0.1px solid var(--light-red) ;
 }

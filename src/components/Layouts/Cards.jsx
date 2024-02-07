@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-const Cards = ({ image, rating, title, paragraph, price }) => {
+const Cards = ({ image, rating, title, paragraph, price , renderRatingIcons}) => {
   return (
     <Col sm={6} lg={4} xl={3} className="mb-4">
       <Card className="overflow-hidden">
@@ -10,7 +10,7 @@ const Cards = ({ image, rating, title, paragraph, price }) => {
         </div>
         <Card.Body>
           <div className="d-flex align-items-center justify-content-between">
-            <div className="item_rating">{rating}</div>
+            <div className="item_rating">{renderRatingIcons(rating)}</div>
             <div className="wishlist">
               <i class="bi bi-heart-fill"></i>
             </div>
@@ -19,15 +19,15 @@ const Cards = ({ image, rating, title, paragraph, price }) => {
           <Card.Title>{title}</Card.Title>
           <Card.Text>{paragraph}</Card.Text>
           <div className="d-flex align-items-center justify-content-between">
-            <div className="men_price">
-              <h5 className="mb-0">
-                <i class="bi bi-currency-rupee me-0"></i>
+            <div className="menu_price">
+              <h5 className="mb-0 me-2">
+                <i class="bi bi-currency-rupee"></i>
                 {price}
               </h5>
             </div>
             <div className="add_to_card">
               <Link to="/">
-                <i class="bi bi-bag-plus-fill" style={{color:"red"}}></i>
+                <i class="bi bi-bag-plus-fill"></i>
               </Link>
             </div>
           </div>
