@@ -1,7 +1,16 @@
 import React from "react";
 import { Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-const Cards = ({ image, rating, title, paragraph, price , renderRatingIcons}) => {
+import { IoBagAdd } from "react-icons/io5";
+
+const Cards = ({
+  image,
+  rating,
+  title,
+  paragraph,
+  price,
+  renderRatingIcons,
+}) => {
   return (
     <Col sm={6} lg={4} xl={3} className="mb-4">
       <Card className="overflow-hidden">
@@ -21,13 +30,14 @@ const Cards = ({ image, rating, title, paragraph, price , renderRatingIcons}) =>
           <div className="d-flex align-items-center justify-content-between">
             <div className="menu_price">
               <h5 className="mb-0 me-2">
+                {/* <FaIndianRupeeSign /> */}
                 <i class="bi bi-currency-rupee"></i>
                 {price}
               </h5>
             </div>
             <div className="add_to_card">
               <Link to="/">
-                <i class="bi bi-bag-plus-fill"></i>
+                <IoBagAdd />
               </Link>
             </div>
           </div>
