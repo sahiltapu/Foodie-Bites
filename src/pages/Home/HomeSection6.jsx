@@ -5,7 +5,7 @@ import User2 from "../../assets/blog/review-author-2.jpg";
 import User3 from "../../assets/blog/review-author-3.jpg";
 import User4 from "../../assets/blog/review-author-5.jpg";
 
-const Section6 = () => {
+const HomeSection6 = () => {
   return (
     <section className="blog_section">
       <Container>
@@ -93,4 +93,4 @@ const Section6 = () => {
   );
 };
 
-export default Section6;
+export default HomeSection6;

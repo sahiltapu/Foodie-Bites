@@ -24,7 +24,7 @@ const mockData = [
   },
 ];
 
-const Section2 = () => {
+const HomeSection2 = () => {
   return (
     <>
       <section className="about_section">
@@ -69,4 +69,4 @@ const Section2 = () => {
   );
 };
 
-export default Section2;
+export default HomeSection2;

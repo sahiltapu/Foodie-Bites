@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import PromotionImage from "../../assets/promotion/pro.png";
 
-const Section4 = () => {
+const HomeSection4 = () => {
   return (
     <>
       <section className="promotion_section">
@@ -60,4 +60,4 @@ const Section4 = () => {
   );
 };
 
-export default Section4;
+export default HomeSection4;

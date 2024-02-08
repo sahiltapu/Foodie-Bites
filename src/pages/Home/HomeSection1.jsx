@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Burger from "../../assets/hero/hero-2.png";
 import { Link } from "react-router-dom";
 
-const Section1 = () => {
+const HomeSection1 = () => {
   return (
     <section className="hero_section">
       <Container>
@@ -39,4 +39,4 @@ const Section1 = () => {
   );
 };
 
-export default Section1;
+export default HomeSection1;

@@ -1,12 +1,12 @@
 import React from 'react'
 import "../../styles/HomeStyle.css";
-import Section1 from './Section1'
-import Section2 from './Section2';
-import Section3 from './Section3';
-import Section4 from './Section4';
-import Section5 from './Section5';
-import Section6 from './Section6';
-import Section7 from './Section7';
+import HomeSection1 from './HomeSection1'
+import HomeSection2 from './HomeSection2';
+import HomeSection3 from './HomeSection3';
+import HomeSection4 from './HomeSection4';
+import HomeSection5 from './HomeSection5';
+import HomeSection6 from './HomeSection6';
+import HomeSection7 from './HomeSection7';
 import Header from '../../components/Layouts/Header';
 import Footer from '../../components/Layouts/Footer';
 
@@ -17,25 +17,25 @@ const Home = () => {
     <>
     <Header/>
     {/* Home section Hero banner */}
-    <Section1 />
+    <HomeSection1 />
 
     {/* Home section About */}
-    <Section2 />
+    <HomeSection2 />
 
     {/* Home section Menu */}
-    <Section3 />
+    <HomeSection3 />
 
     {/* Home section Promotion */}
-    <Section4 />
+    <HomeSection4 />
 
     {/* Home Section Shop */}
-    <Section5 />
+    <HomeSection5 />
 
     {/* Home section Rating */}
-    <Section6 />
+    <HomeSection6 />
 
     {/* Home Section Contact */}
-    <Section7 />
+    <HomeSection7 />
 
 
     <Footer />

@@ -13,7 +13,7 @@ import Brand6 from "../../assets/brands/brand-16.png";
 import Brand7 from "../../assets/brands/brand-17.png";
 import Brand8 from "../../assets/brands/brand-18.png";
 
-function Section5() {
+function HomeSection5() {
   return (
     <>
       <section className="shop_section">
@@ -108,4 +108,4 @@ function Section5() {
   );
 }
 
-export default Section5;
+export default HomeSection5;

@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function Section7() {
+function HomeSection7() {
   return (
     <section className="contact_section">
       <Container>
@@ -24,4 +24,4 @@ function Section7() {
   );
 }
 
-export default Section7;
+export default HomeSection7;

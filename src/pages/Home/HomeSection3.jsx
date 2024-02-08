@@ -99,7 +99,7 @@ const renderRatingIcons = (rating) =>{
 
 
 
-const Section3 = () => {
+const HomeSection3 = () => {
   return (
     <section className="menu_section">
       <Container>
@@ -152,4 +152,4 @@ const Section3 = () => {
   );
 };
 
-export default Section3;
+export default HomeSection3;
