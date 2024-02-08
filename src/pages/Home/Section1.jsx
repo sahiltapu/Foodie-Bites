@@ -10,8 +10,8 @@ const Section1 = () => {
         <Row>
           <Col lg={7} className="mb-5 mb-lg-0">
             <div className="position-relative">
-              <img src={Burger} className="img-fluid" alt="Hero" />
-              <div className="price_badge">
+              <img src={Burger} className="img-fluid fade-in-right" alt="Hero" />
+              <div className="price_badge fade-in-right_price_badge">
                 <div className="badge_text">
                   <h4 className="h4_xs">Only</h4>
                   <h4 className="h3_lg">129/-</h4>
@@ -28,7 +28,7 @@ const Section1 = () => {
                 crisp lettuce, and tangy sauce, nestled between two soft buns,
                 creating a mouthwatering masterpiece
               </p>
-              <Link to="/" className="order_now_button" role="button">
+              <Link to="/" className="order_now" role="button">
                 Order now
               </Link>
             </div>

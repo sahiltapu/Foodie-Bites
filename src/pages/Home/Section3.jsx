@@ -132,7 +132,7 @@ const Section3 = () => {
             <div className="ads_box ads_img1 mb-5 mb-md-0">
               <h4 className="mb-0">Get YOUR FREE</h4>
               <h5>CHEESE FRIES</h5>
-              <Link to="/" className="btn_red px-4 rounded-0">
+              <Link to="/" className="btn_red px-4 rounded-0 order_now pt-2">
                 Learn More
               </Link>
             </div>
@@ -141,7 +141,7 @@ const Section3 = () => {
             <div className="ads_box ads_img2">
               <h4 className="mb-0">Get YOUR FREE</h4>
               <h5>CHEESE FRIES</h5>
-              <Link to="/" className="btn_red px-4 rounded-0">
+              <Link to="/" className="btn_red px-4 rounded-0 order_now pt-2">
                 Learn More
               </Link>
             </div>

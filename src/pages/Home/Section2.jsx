@@ -31,13 +31,13 @@ const Section2 = () => {
         <Container>
           <Row>
             <Col lg={{ span: 8, offset: 2 }} className="text-center">
-              <h2>The burger tates better when you eat it with family</h2>
+              <h2>The burger tastes better when you eat it with family</h2>
               <p>
                 Savoring a delicious burger with the warmth of family, each bite
                 becomes a shared moment of joy and connection around the dinner
                 table.
               </p>
-              <Link to="/" className="order_now_button btn_red button">
+              <Link to="/About" className="order_now btn_red button">
                 Explore Now
               </Link>
             </Col>
