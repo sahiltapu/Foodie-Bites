@@ -6,6 +6,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import "../../styles/FooterStyle.css";
 
 function Footer() {
   // Scroll State
@@ -64,22 +65,22 @@ function Footer() {
                 <h5>Follow Us</h5>
                 <ul className="list-unstyled text-center mt-2">
                   <li>
-                    <Link to="https://www.facebook.com/" rel="noopener noreferrer">
+                    <Link to="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">
                     <FaFacebookSquare />
                     </Link>
                   </li>
                   <li>
-                    <Link to="https://twitter.com/?lang=en" rel="noopener noreferrer">
+                    <Link to="https://twitter.com/?lang=en" rel="noopener noreferrer" target="_blank">
                     <FaXTwitter style={{color:"black"}} />
                     </Link>
                   </li>
                   <li>
-                    <Link to="https://www.instagram.com/" rel="noopener noreferrer">
+                    <Link to="https://www.instagram.com/" rel="noopener noreferrer" target="_blank">
                     <FaInstagram style={{color: "linear-gradient(to right, #833ab4, #fd1d1d, #fd1d1d, #fcb045)", textDecoration:"none"}}/>
                     </Link>
                   </li>
                   <li>
-                    <Link to="https://www.youtube.com/" rel="noopener noreferrer">
+                    <Link to="https://www.youtube.com/" rel="noopener noreferrer" target="_blank">
                     <FaYoutube style={{color:"red"}}/>
                     </Link>
                   </li>
