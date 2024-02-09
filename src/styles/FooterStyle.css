@@ -43,3 +43,22 @@ footer .copy_right ul li:after {
   top: -1px;
   right: -10px;
 }
+/* Media Query Mobiles */
+
+@media (max-width: 1200px) {
+  /* Home Contact 8.0 */
+  .contact_section h2 {
+    font-size: 3.5rem;
+  }
+  .contact_section p {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  /* Home Blog 7.0 */
+  .blog_section .carousel.slide .carousel-inner .carousel-caption p {
+    font-size: 1rem;
+  }
+}
